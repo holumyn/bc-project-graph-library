@@ -4,8 +4,6 @@
 
 """
 import click
-from collections import deque
-
 
 @click.command()
 @click.option('--option1', prompt='Instruction: Enter 1 for Graph 1 or 2 for Graph 2 or 3 for Graph 3(BFS)\n',
