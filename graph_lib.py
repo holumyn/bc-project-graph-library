@@ -45,17 +45,17 @@ def dfs(graph,start):
 
     Return: List of a list of visited nodes
     """
-		visited = []
-		stack = [start,]
+	visited = []
+	stack = [start,]
 
-		while stack:
-			node = stack.pop()
+	while stack:
+		node = stack.pop()
 
-			if node not in visited:
-				visited.append(node)
-				stack.extend([x for x in graph[node] if x not in visited])
+		if node not in visited:
+			visited.append(node)
+			stack.extend([x for x in graph[node] if x not in visited])
 
-		click.echo(visited)
+	click.echo(visited)
 
 def bfs(graph, start, end):
     """
